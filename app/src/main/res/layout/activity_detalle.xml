@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detalle">
+
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textStyle="bold"
+        android:textSize="@dimen/nombre_contacto"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top_margin"
+        android:onClick="llamar">
+
+        <ImageView
+            android:id="@+id/ivTelefono"
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/telefono"></ImageView>
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Telefono"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/telefono"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/top_margin"
+        android:onClick="enviarEmail">
+
+
+        <ImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="27dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/correo_electronico"></ImageView>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/telefono"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

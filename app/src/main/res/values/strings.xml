@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Contactos</string>
+    <string name="nombre">Maicol Ruiz</string>
+    <string name="Telefono">11-111</string>
+    <string name="email">maicol@gmail.com</string>
+    <string name="pnombre">Nombre</string>
+    <string name="ptelefono">Telefono</string>
+    <string name="pemail">Email</string>
+</resources>
