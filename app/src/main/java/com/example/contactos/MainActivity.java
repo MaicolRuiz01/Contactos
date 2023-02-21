@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    public ContactoAdapter adapter;
     public void inicializarAdapter(){
-        ContactoAdapter contactoAdapter = new ContactoAdapter(contactos);
-        listaContactos.setAdapter(contactoAdapter);
+        adapter = new ContactoAdapter(contactos,this);
+        listaContactos.setAdapter(adapter);
     }
 
     public void inicializarLista(){

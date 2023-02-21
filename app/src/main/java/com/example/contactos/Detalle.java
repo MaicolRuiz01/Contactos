@@ -22,9 +22,9 @@ public class Detalle extends AppCompatActivity {
         setContentView(R.layout.activity_detalle);
 
         Bundle parametro    =getIntent().getExtras();
-        String nombre       = parametro.getString(getResources().getString(R.string.pnombre));
-        String telefono     = parametro.getString(getResources().getString(R.string.ptelefono));
-        String email        = parametro.getString(getResources().getString(R.string.pemail));
+        String nombre       = parametro.getString("nombre");
+        String telefono     = parametro.getString("telefono");
+        String email        = parametro.getString("email");
 
         TextView tvNombre    = (TextView) findViewById(R.id.tvNombre);
         TextView tvTelefono  = (TextView) findViewById(R.id.tvTelefono);
